@@ -10,37 +10,36 @@
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
-    
-</body>
 
     <header class="header">
         <div class="navbar">
             <div class="container">
-                <button class="menu-button">
-                    <span class="menu-button__line"></span>
-                    <span class="menu-button__line"></span>
-                    <span class="menu-button__line"></span>
-                </button>
-
-                <div class="navbar__menu">
-                    <a href="#about" class="navbar__links">
-                        <img src="img/icons/about.png" alt="About" class="icon">
-                        About
-                    </a>
-                    <a href="#work" class="navbar__links">
-                        <img src="img/icons/work.png" alt="Work" class="icon">
-                        Work
-                    </a>
-                    <a href="#reviews" class="navbar__links">
-                        <img src="img/icons/reviews.png" alt="Reviews" class="icon">
-                        Reviews
-                    </a>
-                    <a href="#contact" class="navbar__links">
-                        <img src="img/icons/contact.png" alt="Contact" class="icon">
-                        Contact
-                    </a>
+                <div class="navbar-wrap">
+                    <div class="menu-button">
+                        <div class="menu-button__line"></div>
+                    </div>
+    
+                    <div class="navbar__menu">
+                        <a href="#about" class="navbar__links navbar__links--0">
+                            <img src="img/icons/about.png" alt="About" class="icon">
+                            About
+                        </a>
+                        <a href="#work" class="navbar__links navbar__links--1">
+                            <img src="img/icons/work.png" alt="Work" class="icon">
+                            Work
+                        </a>
+                        <a href="#reviews" class="navbar__links navbar__links--2">
+                            <img src="img/icons/reviews.png" alt="Reviews" class="icon">
+                            Reviews
+                        </a>
+                        <a href="#contact" class="navbar__links navbar__links--3">
+                            <img src="img/icons/contact.png" alt="Contact" class="icon">
+                            Contact
+                        </a>
+                    </div>
+                    <!-- /.navbar__menu -->
                 </div>
-                <!-- /.navbar__menu -->
+                <!-- /.navbar-wrap -->
             </div>
             <!-- /.container -->
         </div>
@@ -49,5 +48,8 @@
         <!-- /.hero -->
     </header>
     <!-- /.header -->
-
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>
