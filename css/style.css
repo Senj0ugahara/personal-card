@@ -46,7 +46,11 @@ a {
 
 body {
   font-family: 'Lato Italic', sans-serif;
-  background: #000;
+}
+
+header {
+  background: url(../img/bg.png);
+  height: 1000px;
 }
 
 .navbar-wrap {
@@ -231,5 +235,101 @@ body {
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(45deg) translate(-10px, -10px);
+            transform: rotate(45deg) translate(-10px, -10px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate(45deg) translate(10px, 10px);
+            transform: rotate(45deg) translate(10px, 10px);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(45deg) translate(-10px, -10px);
+            transform: rotate(45deg) translate(-10px, -10px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate(45deg) translate(10px, 10px);
+            transform: rotate(45deg) translate(10px, 10px);
+  }
+}
+
+.hero__info {
+  padding-top: 150px;
+  padding-bottom: 370px;
+  text-align: center;
+}
+
+.hero__name {
+  font-family: 'Lato Bold', sans-serif;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hero__position {
+  font-size: 20px;
+  color: #d70231;
+}
+
+.scroll-down {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  font-family: 'Lato Regular', sans-serif;
+  font-size: 10px;
+  color: #d70231;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.scroll-down__arrow {
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.scroll-down__arrow:hover > span {
+  -webkit-animation: arrow 1.2s infinite;
+          animation: arrow 1.2s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.scroll-down span {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-bottom: 3px solid #d70231;
+  border-right: 3px solid #d70231;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  opacity: 0.2;
+}
+
+.scroll-down span:nth-child(2) {
+  opacity: 0.5;
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+
+.scroll-down span:nth-child(3) {
+  opacity: 1;
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
 }
 /*# sourceMappingURL=style.css.map */
