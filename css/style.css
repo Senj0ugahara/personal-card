@@ -161,6 +161,7 @@ header {
 }
 
 .menu-button {
+  height: 20px;
   cursor: pointer;
   z-index: 100;
 }
@@ -171,8 +172,8 @@ header {
 
 .menu-button__line {
   position: relative;
-  -webkit-transform: translateY(6px);
-          transform: translateY(6px);
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
   border: 1px solid #d70231;
   border-radius: 5px;
   padding-top: 1px;
@@ -190,7 +191,7 @@ header {
   position: absolute;
   width: 40px;
   left: -1px;
-  bottom: 6px;
+  bottom: 8px;
   border: 1px solid #d70231;
   border-radius: 5px;
   padding-top: 1px;
@@ -206,7 +207,7 @@ header {
   position: absolute;
   width: 40px;
   left: -1px;
-  top: 6px;
+  top: 8px;
   border: 1px solid #d70231;
   border-radius: 5px;
   padding-top: 1px;
