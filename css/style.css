@@ -12,6 +12,10 @@ a {
   margin: auto;
 }
 
+.cell {
+  width: 50%;
+}
+
 @font-face {
   font-family: 'Lato Regular';
   src: url("../fonts/Lato-Regular.eot");
@@ -51,6 +55,13 @@ body {
 header {
   background: url(../img/bg.png);
   height: 1000px;
+}
+
+h3 {
+  font-family: 'Lato Bold Italic', sans-serif;
+  font-size: 24px;
+  color: #d70231;
+  text-transform: uppercase;
 }
 
 .navbar-wrap {
@@ -332,5 +343,151 @@ header {
   opacity: 1;
   -webkit-animation-delay: -0.4s;
           animation-delay: -0.4s;
+}
+
+@-webkit-keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes jquery {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes jquery {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@-webkit-keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+.about {
+  background: #080808;
+}
+
+.about__block {
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+.about-block__description {
+  font-family: 'Lato Regular', sans-serif;
+  font-size: 15px;
+  line-height: 40;
+  color: #fff;
+  line-height: 2.667;
+}
+
+.about__progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.about__progress-bar__name {
+  font-family: 'Lato Bold', sans-serif;
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.about__progress-bar__track {
+  width: 100%;
+  height: 4px;
+  background: #252525;
+  margin-left: 10px;
+}
+
+.about__progress-bar__track-line {
+  height: 4px;
+  background: #d70231;
+}
+
+.about__progress-bar__track-line.html {
+  width: 90%;
+  -webkit-animation: html 2s;
+          animation: html 2s;
+}
+
+.about__progress-bar__track-line.css {
+  width: 90%;
+  -webkit-animation: css 2s;
+          animation: css 2s;
+}
+
+.about__progress-bar__track-line.jquery {
+  width: 40%;
+  -webkit-animation: jquery 2s;
+          animation: jquery 2s;
+}
+
+.about__progress-bar__track-line.javascript {
+  width: 20%;
+  -webkit-animation: javascript 2s;
+          animation: javascript 2s;
+}
+
+.about__progress-bar:last-child {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
