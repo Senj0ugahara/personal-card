@@ -18,18 +18,52 @@
         width: 0%
     100%
         width: 20%
+@keyframes webdesign
+    0%
+        width: 0%
+    100%
+        width: 60%
 .about
     background: #080808
     &__block
+        display: flex
         padding-top: 100px
         padding-bottom: 130px
+        .cell:last-child
+            padding-left: 25px
     &-block
-        &__description
+        h3.title
+            margin: 0
+            margin-top: 60px
+            margin-bottom: 40px
+        &__info
             +regular
             font-size: 15px
-            line-height: 40
             color: #fff
-            line-height: 2.667
+            line-height: 2.767
+        &__description:last-child
+            border-bottom: none
+            padding-bottom: 0
+        &__description
+            display: flex
+            align-items: center
+            border-bottom: 3px solid #252525
+            padding-top: 25px
+            padding-bottom: 25px
+            opacity: 0.1
+            &-icon
+                padding-right: 30px
+            &-content
+                +regular
+                font-size: 15px
+                color: #fff
+                line-height: 1.765
+                b
+                   +bold-italic
+                   font-size: 17px 
+        &__description:hover
+            transition: all 1s
+            opacity: 1     
     &__progress-bar
         display: flex
         align-items: center
@@ -49,16 +83,19 @@
                 background: #d70231
                 &.html
                     width: 90%
-                    animation: html 2s
+                    animation: html 3s
                 &.css
                     width: 90%
-                    animation: css 2s
+                    animation: css 3s
                 &.jquery
                     width: 40%
-                    animation: jquery 2s
+                    animation: jquery 3s
                 &.javascript
                     width: 20%
-                    animation: javascript 2s
+                    animation: javascript 3s
+                &.webdesign
+                    width: 60%
+                    animation: webdesign 3s
     &__progress-bar:last-child
         margin-bottom: 0
         

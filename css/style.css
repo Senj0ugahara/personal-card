@@ -417,21 +417,91 @@ h3 {
   }
 }
 
+@-webkit-keyframes webdesign {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes webdesign {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
 .about {
   background: #080808;
 }
 
 .about__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-top: 100px;
   padding-bottom: 130px;
 }
 
-.about-block__description {
+.about__block .cell:last-child {
+  padding-left: 25px;
+}
+
+.about-block h3.title {
+  margin: 0;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.about-block__info {
   font-family: 'Lato Regular', sans-serif;
   font-size: 15px;
-  line-height: 40;
   color: #fff;
-  line-height: 2.667;
+  line-height: 2.767;
+}
+
+.about-block__description:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.about-block__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 3px solid #252525;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  opacity: 0.1;
+}
+
+.about-block__description-icon {
+  padding-right: 30px;
+}
+
+.about-block__description-content {
+  font-family: 'Lato Regular', sans-serif;
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.765;
+}
+
+.about-block__description-content b {
+  font-family: 'Lato Bold Italic', sans-serif;
+  font-size: 17px;
+}
+
+.about-block__description:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  opacity: 1;
 }
 
 .about__progress-bar {
@@ -465,26 +535,32 @@ h3 {
 
 .about__progress-bar__track-line.html {
   width: 90%;
-  -webkit-animation: html 2s;
-          animation: html 2s;
+  -webkit-animation: html 3s;
+          animation: html 3s;
 }
 
 .about__progress-bar__track-line.css {
   width: 90%;
-  -webkit-animation: css 2s;
-          animation: css 2s;
+  -webkit-animation: css 3s;
+          animation: css 3s;
 }
 
 .about__progress-bar__track-line.jquery {
   width: 40%;
-  -webkit-animation: jquery 2s;
-          animation: jquery 2s;
+  -webkit-animation: jquery 3s;
+          animation: jquery 3s;
 }
 
 .about__progress-bar__track-line.javascript {
   width: 20%;
-  -webkit-animation: javascript 2s;
-          animation: javascript 2s;
+  -webkit-animation: javascript 3s;
+          animation: javascript 3s;
+}
+
+.about__progress-bar__track-line.webdesign {
+  width: 60%;
+  -webkit-animation: webdesign 3s;
+          animation: webdesign 3s;
 }
 
 .about__progress-bar:last-child {
