@@ -624,4 +624,107 @@ h3 {
   transition: .35s ease;
   opacity: 1;
 }
+
+.reviews {
+  background: #080808;
+}
+
+.reviews__block {
+  padding-top: 120px;
+}
+
+.reviews__block h3.title {
+  margin-bottom: 50px;
+}
+
+.reviews-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews-block .cell:last-child {
+  padding-left: 30px;
+}
+
+.reviews-block__item::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin-top: -15px;
+  margin-left: -15px;
+  background: url("../img/icons/border-1.png");
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+.reviews-block__item::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+  margin-left: 15px;
+  background: url("../img/icons/border-2.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  opacity: 0;
+}
+
+.reviews-block__item:hover:after, .reviews-block__item:hover::before {
+  -webkit-transition: .35s ease;
+  transition: .35s ease;
+  opacity: 1;
+}
+
+.reviews-block__item {
+  position: relative;
+}
+
+.reviews-block__item-personal_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.reviews-block__item-personal_info span.name {
+  position: relative;
+  font-family: 'Lato Bold Italic', sans-serif;
+  font-size: 17px;
+  color: #fff;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.reviews-block__item-personal_info span.name:before {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 4px;
+  background: #d70231;
+  border-radius: 5px;
+  top: 25px;
+}
+
+.reviews-block__item-personal_info span.position {
+  font-family: 'Lato Bold Italic', sans-serif;
+  font-size: 13px;
+  color: #252525;
+  text-transform: uppercase;
+}
+
+.reviews-block__item-comment {
+  margin-bottom: 70px;
+  font-family: 'Lato Italic', sans-serif;
+  font-size: 15px;
+  color: #fff;
+  line-height: 2;
+}
 /*# sourceMappingURL=style.css.map */
