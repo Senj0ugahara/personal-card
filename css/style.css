@@ -572,4 +572,56 @@ h3 {
 .about__progress-bar:last-child {
   margin-bottom: 0;
 }
+
+.work {
+  background: #000000;
+}
+
+.work-block__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.work-block__item-link {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.work-block__item-link a img {
+  width: 100%;
+  height: 100%;
+}
+
+.work-block__item-link:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+  background: url("../img/work/navigation.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+}
+
+.work-block__item-link:hover:after {
+  -webkit-transition: .35s ease;
+  transition: .35s ease;
+  opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */
