@@ -824,6 +824,13 @@ input, textarea {
   margin-right: 60px;
 }
 
+.footer__block-media a img:hover {
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .footer__block-media a:last-child {
   margin-right: 0;
 }
@@ -849,5 +856,23 @@ input, textarea {
 
 .footer__block-info span:last-child {
   padding-bottom: 0;
+}
+
+.scroll-to-top {
+  position: absolute;
+  display: block;
+  width: 33px;
+  height: 33px;
+  margin-top: -85px;
+  right: 50px;
+  padding: 7px 10px 7px 10px;
+  background: url(../img/icons/footer-border.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.scroll-to-top i {
+  font-size: 17px;
+  color: #d70231;
 }
 /*# sourceMappingURL=style.css.map */

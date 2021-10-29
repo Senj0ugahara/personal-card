@@ -16,3 +16,16 @@
 		$('.navbar__links--3').removeClass('item-3');
 	})
 })();
+
+$('#scroll-down').click(function(event) {
+    event.preventDefault();
+    var n = $(document).height();
+    $('html, body').animate({ scrollTop: n }, 1500);
+});
+
+
+$('.scroll-to-top').click(function(event) {
+    event.preventDefault();
+    var n = $(document).height();
+    $('html, body').animate({ scrollTop: n }, 1500);
+});
