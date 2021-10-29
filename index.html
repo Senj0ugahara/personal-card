@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
 
@@ -189,7 +190,7 @@
         <section class="work" id="work">
             <div class="work__block">
                 <div class="work-block">
-                    <div class="work-block__item">
+                    <div class="work-block__item wow bounceInLeft" data-wow-delay = "0.3s">
                         <div class="work-block__item-link">
                             <a href="">
                                 <img src="img/work/project-1.png" alt="project-1">
@@ -212,7 +213,7 @@
                         </div>
                     </div>
                     <!-- /.work-block__item -->
-                    <div class="work-block__item">
+                    <div class="work-block__item wow bounceInRight" data-wow-delay = "0.4s">
                         <div class="work-block__item-link">
                             <a href="">
                                 <img src="img/work/project-5.png" alt="project-5">
@@ -244,10 +245,10 @@
         <section class="reviews" id="reviews">
             <div class="container">
                 <div class="reviews__block">
-                    <h3 class="title">What Clients Say?</h3>
+                    <h3 class="title wow fadeInLeft" data-wow-delay = "0.5s">What Clients Say?</h3>
                     <div class="reviews-block">
                         <div class="cell">
-                            <div class="reviews-block__item">
+                            <div class="reviews-block__item wow rotateInDownLeft" data-wow-delay = "0.4s">
                                 <div class="reviews-block__item-personal_info">
                                     <span class="name">JosE Graves</span>
                                     <span class="position">Managing editor</span>
@@ -256,7 +257,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                                 </div>
                             </div>
-                            <div class="reviews-block__item">
+                            <div class="reviews-block__item wow rotateInUpLeft" data-wow-delay = "0.6s">
                                 <div class="reviews-block__item-personal_info">
                                     <span class="name">Sheldon Floyd</span>
                                     <span class="position">Director</span>
@@ -268,7 +269,7 @@
                         </div>
                         <!-- /.cell -->
                         <div class="cell">
-                            <div class="reviews-block__item">
+                            <div class="reviews-block__item wow rotateInDownRight" data-wow-delay = "0.8s">
                                 <div class="reviews-block__item-personal_info">
                                     <span class="name">Harvey Wheeler</span>
                                     <span class="position">Director</span>
@@ -277,7 +278,7 @@
                                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </div>
                             </div>
-                            <div class="reviews-block__item">
+                            <div class="reviews-block__item wow rotateInUpRight" data-wow-delay = "1s">
                                 <div class="reviews-block__item-personal_info">
                                     <span class="name">Vanessa Scott</span>
                                     <span class="position">Founder</span>
@@ -296,7 +297,60 @@
             <!-- /.container -->
         </section>
         <!-- /.reviews -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact__block">
+                    <h3 class="title">Want work with me?</h3>
+                    <div class="contact-block">
+                        <div class="contact-block__contacts">
+                            <input type="text" name="name" class="form__input" placeholder="NAME">
+                            <input type="text" name="email" class="form__input" placeholder="EMAIL">
+                            <input type="text" name="subject" class="form__input" placeholder="SUBJECT">
+                        </div>
+                        <div class="contact-block__message">
+                            <textarea name="message" class="form__textarea" cols="30" placeholder="MESSAGE"></textarea>
+                        </div>
+                        <div class="contact-block__btn">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <!-- /.contact-block -->
+                </div>
+                <!-- /.contact__block -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.contact -->
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <h3 class="title">WANna FOLLOW ME ON SOCIAL MEDIAS ?</h3>
+                <div class="footer__block-media">
+                    <a href="">
+                        <img src="img/icons/Twitter.png" alt="Twitter">
+                    </a>
+                    <a href="">
+                        <img src="img/icons/Behance.png" alt="Behance">
+                    </a>
+                    <a href="">
+                        <img src="img/icons/Facebook.png" alt="Facebook">
+                    </a>
+                    <a href="">
+                        <img src="img/icons/Twitter-2.png" alt="Twitter">
+                    </a>
+                </div>
+                <div class="footer__block-info">
+                    <span>Russia, Kirov</span>
+                    <span>kamizu00@mail.ru/+7 (953) 677 31-91</span>
+                    <span>2021©ReiProfile</span>
+                </div>
+            </div>
+            <!-- /.footer__block -->
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
     
     <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>

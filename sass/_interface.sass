@@ -1,11 +1,34 @@
 body
     +italic
+    background: #080808
 
 header
     background: url(../img/bg.png)
+    max-height: auto
+footer
+    background: url(../img/footer-bg.png)
     max-height: auto
 h3
     +bold-italic
     font-size: 24px
     color: #d70231
     text-transform: uppercase
+input[type="text"]
+    width: 270px
+    padding: 16px 0px 16px 14px
+.form__input
+    margin-bottom: 24px
+.form__input:last-child
+    margin-bottom: 0
+textarea
+    width: 770px
+    height: 100%
+    padding: 16px 0px 0px 13px
+    resize: none
+input, textarea 
+    border: 3px solid #252525
+    background: transparent
+    +regular
+    font-size: 15px
+    color: #484848
+    outline: none
